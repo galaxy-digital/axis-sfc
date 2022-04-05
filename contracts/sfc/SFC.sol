@@ -174,10 +174,6 @@ contract SFC is Initializable, Ownable, StakersConstants, Version {
         return getLockupInfo[delegator][toValidatorID].lockedStake;
     }
 
-    /*
-    Constructor
-    */
-
     function initialize(uint256 sealedEpoch, uint256 _totalSupply, address nodeDriver, address owner) external initializer {
         Ownable.initialize(owner);
         currentSealedEpoch = sealedEpoch;
@@ -211,10 +207,6 @@ contract SFC is Initializable, Ownable, StakersConstants, Version {
             emit LockedUpStake(delegator, toValidatorID, lockupDuration, lockedStake);
         }
     }
-
-    /*
-    Methods
-    */
 
     function createValidator(bytes calldata pubkey) external payable {
         require(msg.value >= minSelfStake(), "insufficient self-stake");
