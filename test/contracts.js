@@ -19,19 +19,19 @@ describe("Create UserWallet", function () {
 		});
 		await tx.wait();	
 
-		var sICICB;
+		var sAXIS;
 		var stakeTokenizer;
-		/* ----------- sICICB -------------- */
-		//deploy SICICB contract for test
-		const SICICB = await ethers.getContractFactory("SICICB");
-		sICICB = await SICICB.deploy();
-		await sICICB.deployed();
+		/* ----------- sAXIS -------------- */
+		//deploy SAXIS contract for test
+		const SAXIS = await ethers.getContractFactory("SAXIS");
+		sAXIS = await SAXIS.deploy();
+		await sAXIS.deployed();
 
 		const StakeTokenizer = await ethers.getContractFactory("StakeTokenizer");
-		stakeTokenizer = await StakeTokenizer.deploy(sICICB.address);
+		stakeTokenizer = await StakeTokenizer.deploy(sAXIS.address);
 		await stakeTokenizer.deployed();
 
-		var tx = await sICICB.addMinter(stakeTokenizer.address);
+		var tx = await sAXIS.addMinter(stakeTokenizer.address);
 		await tx.wait();
 
 		// stakerInfo

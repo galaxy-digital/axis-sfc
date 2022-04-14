@@ -28,13 +28,13 @@ module.exports = {
 			accounts: [process.env.PRIVKEY]
 		},
 		axis :{
-			url: "/",
+			url: "http://3.228.245.185",
 			accounts: [process.env.PRIVKEY]
 		},
-		icicbtest :{
-			url: "/",
+		axistest :{
+			url: "http://3.228.245.185",
 			accounts: [process.env.PRIVKEY]
-		}
+		},
 	},
 	etherscan: {
 		// Your API key for Etherscan

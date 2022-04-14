@@ -26,15 +26,9 @@
     "hardhat-deploy": "^0.9.3"
   },
   "scripts": {
-    "deploy_test": "npx hardhat test",
-    "deploy_axis": "npx hardhat run --network axis scripts/deploy.js",
-    "deploy_axis_test": "npx hardhat run --network axistest scripts/deploy.js",
-    "set_axis": "npx hardhat run --network axis scripts/setSFC.js",
-    "set_axis_test": "npx hardhat run --network axistest scripts/setSFC.js",
-    "deploy": "npx hardhat run --network bsc scripts/deploy.js",
-
-    "setinfo": "npx hardhat run --network axis scripts/set-validators.js",
-    "setinfo_test": "npx hardhat run --network axistest scripts/set-validators.js"
+    "test": "npx hardhat run --network axistest scripts/test.js",
+    "deploy": "npx hardhat run --network axis scripts/deploy.js",
+    "deploy_test": "npx hardhat run --network axistest scripts/deploy_test.js"
   },
   "eslintConfig": {
     "extends": [

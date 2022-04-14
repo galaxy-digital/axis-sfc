@@ -879,7 +879,7 @@ contract WhitelistedSenderRole {
  * tokens and those that they have an allowance for, in a way that can be
  * recognized off-chain (via event analysis).
  */
-contract SICICB is ERC20, ERC20Detailed, ERC20Mintable, ERC20Burnable, Ownable, WhitelistedRecipientRole, WhitelistedSenderRole {
+contract SAXIS is ERC20, ERC20Detailed, ERC20Mintable, ERC20Burnable, Ownable, WhitelistedRecipientRole, WhitelistedSenderRole {
 
     /**
      * @dev Sets the values for `name`, `symbol`, and `decimals`. All three of
@@ -888,7 +888,7 @@ contract SICICB is ERC20, ERC20Detailed, ERC20Mintable, ERC20Burnable, Ownable, 
      */
     constructor() public {
         // initialize the token
-        ERC20Detailed.initialize("Staked ICICB", "SICICB", 18);
+        ERC20Detailed.initialize("Staked ICICB", "SAXIS", 18);
 
         // initialize the Ownable
         // _transferOwnership(owner);

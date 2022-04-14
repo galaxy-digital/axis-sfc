@@ -21,7 +21,7 @@ async function main() {
 	let tx = await sAXIS.addMinter(stakeTokenizer.address);
 	await tx.wait();
 	const StakerInfo = await ethers.getContractFactory("StakerInfo");
-	stakerInfo = await StakerInfo.deploy(true);
+	stakerInfo = await StakerInfo.deploy(false);
 	await stakerInfo.deployed();
 	console.log("SAXIS : ", sAXIS.address);
 	console.log("StakeTokenizer : ", stakeTokenizer.address);
