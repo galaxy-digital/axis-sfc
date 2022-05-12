@@ -88,7 +88,7 @@ contract StakerInfo is Ownable {
 
 	address internal stakerContractAddress = 0xeAb1000000000000000000000000000000000000;
 	constructor(bool mainnet) public {
-		string memory _configUrl = "https://ipfs.io/ipfs/QmWSNiG7dAboTYrSZ8qBfY1ENid45oypCQXJFyep7k4Ne3";
+		string memory _configUrl = "https://ipfs.io/ipfs/QmSbMpdMe2QhPxFnqqa3vJuKqmm6o6RDjYgvdJ5i1qHaao";
 		if (mainnet) {
 			_updateInfo(0x14fCa2361553F821b65812fD40ab7bDEF37de3c2, _configUrl);
 			_updateInfo(0xE285AC259F5F66E3580Db4dd2909A2E57fD1bF78, _configUrl);

@@ -28,11 +28,11 @@ module.exports = {
 			accounts: [process.env.PRIVKEY]
 		},
 		axis :{
-			url: "http://3.228.245.185",
+			url: "https://rpc.axischain.network",
 			accounts: [process.env.PRIVKEY]
 		},
 		axistest :{
-			url: "http://3.228.245.185",
+			url: "https://testnet-rpc.axischain.network",
 			accounts: [process.env.PRIVKEY]
 		},
 	},
