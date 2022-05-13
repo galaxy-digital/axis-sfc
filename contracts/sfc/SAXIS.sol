@@ -888,7 +888,7 @@ contract SAXIS is ERC20, ERC20Detailed, ERC20Mintable, ERC20Burnable, Ownable, W
      */
     constructor() public {
         // initialize the token
-        ERC20Detailed.initialize("Staked ICICB", "SAXIS", 18);
+        ERC20Detailed.initialize("Staked AXIS", "SAXIS", 18);
 
         // initialize the Ownable
         // _transferOwnership(owner);
